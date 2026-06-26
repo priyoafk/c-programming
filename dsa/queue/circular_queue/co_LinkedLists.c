@@ -7,11 +7,11 @@ struct node
 };
 struct node *front = NULL;
 struct node *rear = NULL;
-void enqueue(int x)
+void enqueue(int data)
 {
     struct node *newnode;
     newnode = (struct node *)malloc(sizeof(struct node));
-    newnode->data = x;
+    newnode->data = data;
     newnode->next = NULL;
     if (front == NULL && rear == NULL)
     {
